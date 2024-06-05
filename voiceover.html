@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Over</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(128, 128, 128, 0.5)),url("voiceover.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .main-nav {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-content {
+            padding-top: 20px;
+        }
+
+        .voiceover-content img {
+            border-radius: 15px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-body {
+            padding: 20px;
+            background: linear-gradient(45deg, #6c757d, #f8f9fa);
+            clip-path: ellipse(85% 100% at 50% 0%);
+            border-radius: 15px;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #260C07;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: #F23545;
+        }
+
+        .card-price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1F2A40;
+        }
+    </style>
+</head>
+
+<body>
+<header class="main-nav">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Dlightfulmusic</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="musicProductionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-music"></i> Music Production
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="musicProductionDropdown">
+                                <li><a class="dropdown-item" href="composing.html"><i class="fas fa-pen-nib"></i> Composing</a></li>
+                                <li><a class="dropdown-item" href="voiceover.html"><i class="fas fa-microphone"></i> Voice Over</a></li>
+                                <li><a class="dropdown-item" href="mixing.html"><i class="fas fa-sliders-h"></i> Mixing</a></li>
+                                <li><a class="dropdown-item" href="mastering.html"><i class="fas fa-headphones"></i> Mastering</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="main-content container mt-5">
+        <section class="voiceover-content text-center">
+            <h1 class="text-warning">Voice Over</h1>
+            <p class="text-light">Develop your voice-over skills with our expert training. Learn techniques for different types of voice-over work, from commercials to narrations, and enhance your vocal performance and recording quality.</p>
+        </section>
+        <section class="pricing-cards mt-5">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Basic Package</h5>
+                            <p class="card-text">For small projects and individual artists.</p>
+                            <p class="card-price">$100</p>
+                            <ul class="list-unstyled">
+                                <li>Up to 30 minutes of recording</li>
+                                <li>Basic audio editing</li>
+                                <li>1 revision</li>
+                                <li>Delivery in 3 days</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Standard Package</h5>
+                            <p class="card-text">Ideal for intermediate projects and growing needs.</p>
+                            <p class="card-price">$200</p>
+                            <ul class="list-unstyled">
+                                <li>Up to 1 hour of recording</li>
+                                <li>Advanced audio editing</li>
+                                <li>3 revisions</li>
+                                <li>Delivery in 5 days</li>
+                                <li>High-quality audio files</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Pro Package</h5>
+                            <p class="card-text">Best for large projects and professional needs.</p>
+                            <p class="card-price">$400</p>
+                            <ul class="list-unstyled">
+                                <li>Up to 2 hours of recording</li>
+                                <li>Full audio production</li>
+                                <li>Unlimited revisions</li>
+                                <li>Delivery in 7 days</li>
+                                <li>High-quality audio files and project files</li>
+                                <li>Commercial rights included</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+
+<footer class="footer">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-3  ">
+                        <h4>Contact Us</h4>
+                        <p>Email: info@dlightfulmusic.com</p>
+                        <p>Phone: +91 91212 91212</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                   
+                    <div class="col-lg-3">
+                        <h4>Services</h4>
+                        <div class="footer-links">
+                           <p> <a href="index.html">Music Classes</a></p>
+                            <p><a href="composing.html">Music Production</a></p>
+                            <p><a href="#">Exams</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4>Useful Links</h4>
+                        <div class="footer-links">
+                            <p><a href="discover.html">Discover</a></p>
+                            <p><a href="courses.html">Courses</a></p>
+                            <p><a href="contact.html">Contact</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mt-4">
+                    <div class="col">
+                        <p>&copy; 2024 DlightfulM usic. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

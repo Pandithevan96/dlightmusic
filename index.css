@@ -1,0 +1,739 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated font */
+}
+.parallax1 {
+    background-image: url('midi-piano.jpg'); /* Music-related background image */
+    min-height: 500px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.custom-opacity{
+    backdrop-filter: blur(20px);
+}
+#first {
+    font-size: 1.2em;
+-webkit-background-clip: text;
+-webkit-text-stroke: 1px solid;
+color: transparent;
+background-image: linear-gradient(to right, #ff7e5f, #feb47b); /* Add a gradient background */
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+}
+
+.navbar-brand {
+    color: #ffd700; /* Gold color for the brand */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    margin: 0 auto; /* Center the nav items */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* Light text color */
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+.navbar-toggler-icon {
+    background-image: url('https://img.icons8.com/color/452/electric-guitar.png'); /* Music icon for the toggler */
+    background-size: cover;
+}
+
+
+.navbar-toggler {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.25em;
+    height: 1.25em;
+    vertical-align: middle;
+    content: "";
+    background-size: cover;
+    transition: transform 0.3s ease-in-out;
+}
+.navbar-toggler .fas {
+    transition: transform 0.3s ease;
+}
+
+.rotate-90 {
+    transform: rotate(90deg);
+}
+.navbar-toggler.collapsed .navbar-toggler-icon {
+    transform: rotate(0);
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    transform: rotate(180deg);
+}
+
+.navbar-toggler-icon {
+    display: none;
+}
+
+/* Custom icon styles */
+.custom-toggler-icon i {
+    font-size: 1.5rem;
+    color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.form-control {
+    background-color: #ffffff;
+     /* Light background color for search input */
+    color: #1c1c1c; /* Dark text color */
+}
+
+.btn-outline-success {
+    color: #ffd700; /* Button text color */
+    border-color: #ffd700; /* Button border color */
+}
+
+.btn-outline-success:hover {
+    background-color: #ffd700; /* Change background color on hover */
+    color: #1c1c1c; /* Dark text color on hover */
+}
+
+.dropdown-menu {
+    background-color: #1c1c1c; /* Darker background for dropdown */
+}
+
+.dropdown-item {
+    color: #ffffff; /* Light text color for dropdown items */
+}
+
+.dropdown-item:hover {
+    color: #ffd700; /* Gold color on hover */
+    background-color: transparent; /* No background change on hover */
+}
+
+.content {
+    padding: 30px;
+}
+
+
+.about-section {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+     /* Light gray background */
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333333; /* Dark text color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated font */
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555555; /* Medium dark text color */
+    margin-bottom: 20px;
+}
+
+.class-category {
+    margin-bottom: 40px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.class-category .card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.class-category .card:hover {
+    transform: translateY(-5px); /* Example of slight lift on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.class-category .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px; /* Adjusted fixed height */
+    object-fit: cover;
+}
+
+.class-category .card-title {
+    font-size: 24px; /* Larger font size for titles */
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1c1c1c; /* Dark text color */
+}
+
+.class-category .card-text {
+    font-size: 16px; /* Slightly larger text size */
+    line-height: 1.6;
+    color: #555555; /* Medium dark text color */
+    margin-bottom: 0;
+}
+.class-category .card-img-top {
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px; /* Adjusted fixed height */
+    object-fit: cover;
+}
+.title-container {
+    text-align: center;
+    margin-top: 40px;
+    color:#ffd700;
+    letter-spacing: 2px;
+}
+.title-container span{
+    font-size: .6em;
+    color:#595959;
+    border-bottom: 1px solid #ffd700;
+
+}
+
+.image-container {
+overflow: hidden;
+border-radius: 10px 0 0 10px;
+/* margin-top: 40px; */
+}
+
+.image-container img {
+width:100%; /* Ensure image takes full width of container */
+height:600px; /* Maintain aspect ratio */
+object-fit: cover;
+clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+.text-content {
+padding: 20px;
+border-radius: 0 10px 10px 0;
+}
+
+.text-content h3 {
+margin-bottom: 10px;
+}
+
+.text-content p {
+margin-bottom: 10px;
+}
+.carousel-item {
+    text-align: center; /* Center align content inside carousel items */
+}
+.carousel-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for captions */
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+}
+.footer {
+    /* background-color: #343a40; */
+    background-color: #262626;
+    color: #ffffff;
+    padding: 60px 0;
+    margin-top: 50px;
+}
+
+.footer p {
+    margin-bottom: 0;
+    color:#ced4da;
+}
+.footer p:hover{
+    color: #f8f9fa;
+
+}
+.footer .social-icons a {
+    color:#ced4da;
+
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.footer .social-icons a:hover {
+    color: #f8f9fa;
+}
+
+.footer .footer-links a {
+    color:#ced4da;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.footer .footer-links a:hover {
+    text-decoration: underline;
+    color: #f8f9fa;
+}
+
+
+
+
+/* Custom styles for the navbar and dropdown menu */
+.main-nav .dropdown-menu {
+    background-color: #343a40;
+    border: none;
+}
+
+.main-nav .dropdown-menu .dropdown-item {
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.main-nav .dropdown-menu .dropdown-item:hover {
+    background-color: #495057;
+    color: #ffffff;
+}
+
+.main-nav .dropdown-menu .dropdown-item i {
+    margin-right: 10px;
+}
+
+/* Custom styles for the content sections */
+.main-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.main-content h1, .main-content h2 {
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.discover-body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+.discover-profile-cards{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+.discover-profile-cards img{
+    object-fit: cover;
+    border-radius: 50%;  
+
+}
+
+.discover-content {
+    background: url('pianostd.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: bottom;
+    height: 450px;
+}
+
+#discover-header {
+    background: transparent;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#discover-title {
+    font-family: 'Edwardian Script ITC', cursive;
+    font-size: 48px;
+    color: #ced4da;
+    background: #1a1e21;
+    opacity: 0.5;
+}
+
+#discover-subtitle {
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 24px;
+    font-style: italic;
+    color:#b7987f;
+}
+
+.discover-section {
+    text-align: center;
+}
+.discover-section footer {
+    text-align: center;
+}
+
+.discover-heading {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 36px;
+    color:#BFB3A8;
+}
+
+.discover-text {
+    font-size: 18px;
+}
+/* Base styles */
+.review-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.review-heading {
+    font-size: 2.5rem;
+    color: #1F2A40;
+    margin-bottom: 30px;
+}
+
+.review-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.review-card {
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+}
+
+.review-text {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.review-author {
+    font-size: 1rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+
+#discover-video-section {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+}
+
+#discover-video-section iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.video-box {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    background: #000;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video-box iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+}
+
+
+
+.discover-profile-card {
+    background: #f8f9fa;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 300px;
+}
+
+.discover-profile-name {
+    font-family: 'Vivaldi', cursive;
+    font-size: 22px;
+    color: #001122;
+}
+
+.discover-profile-description {
+    font-size: 16px;
+    color: #333333;
+}
+
+#discover-harmony .discover-img {
+    width: 80%;
+    border-radius: 10px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.discover-marquee {
+    font-family: 'Monotype Corsiva', cursive;
+    font-size: 18px;
+    color: #495057;
+}
+
+#discover-footer {
+    text-align: center;
+    padding: 20px;
+    background: #f8f9fa;
+}
+
+.discover-footer-text {
+    font-size: 20px;
+}
+
+.discover-social-icons {
+    margin-top: 10px;
+}
+
+.discover-social-link {
+    color: #001122;
+    margin: 0 10px;
+}
+.ps{
+    background: #495057;
+}
+
+
+
+/* contact */
+.contact-body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+}
+.contact-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(128, 128, 128, 0.5)),url("contactus.jpg")!important;
+    color: white;
+    padding: 80px 0;
+}
+.contact-header h1 {
+    font-size: 3rem;
+}
+.form-section {
+    /* padding: 60px 0; */
+}
+.custom-card {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+.custom-card h3 {
+    margin-bottom: 30px;
+}
+.custom-card input,
+.custom-card textarea {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    margin-bottom: 15px;
+}
+.custom-button {
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+}
+.custom-button:hover {
+    background-color: #218838;
+}
+.modal-header {
+    background-color: #343a40;
+    color: white;
+}
+.modal-footer .btn {
+    border-radius: 5px;
+}
+.section-title {
+    text-align: center;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: #495057;
+    display: block;
+    margin: 2px auto;
+}
+
+/* course */
+
+.course-body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+.course-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(128, 128, 128, 0.5)),url("");
+    background-color: #333;
+    color: white;
+    padding-top: 70px !important;
+    padding-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.course-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.course-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+.course-title {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+}
+.course-description {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+.course-fees {
+    color: #e67e22;
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+.enroll-button {
+    background-color: #333;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    padding: 12px 25px;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+.enroll-button:hover {
+    transform: translateY(-2px);
+    color:#ffd700;
+}
+
+
+@media (max-width: 768px) {
+    .parallax1{
+        margin-top: 40px;
+    }
+.image-container, .text-content {
+border-radius: 10px; /* Adjust border radius for smaller screens */
+}
+.image-container {
+margin-top: 20px; /* Reduce margin on smaller screens */
+}
+.carousel-content{
+    height: 300px;
+}
+.carousel-caption{
+    left: 0;
+    height: 200px;
+    width: 100%;
+    font-size: .5em !important;
+
+}
+}
+/* Adjust text size for smaller screens */
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 1.2rem!important; /* Adjust as needed */
+    }
+    .carousel-caption p {
+        font-size: 0.7rem !important; /* Adjust as needed */
+    }
+    .footer .row {
+        flex-wrap: wrap;
+    }
+    .footer .col-lg-3 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+    .footer .col-lg-3 {
+        padding: 10px 15px; /* Adjust padding as needed */
+    }
+    .about-section {
+        padding: 20px 0;
+        margin: -10px;
+
+    }
+    .text-content p{
+        font-size: .7rem;
+    }
+    .discover-content {
+        height: 680px;
+    }
+    .review-cards {
+        display: block;
+        gap: 30px;
+    }
+    .review-cards>div{
+        margin-top: 30px;
+     
+    }
+}
+
+
